@@ -511,7 +511,7 @@ EOFSS
 
     cd /root/9Hits/9HitsViewer_x64/sessions/
     isproxy=system
-	numberex=80
+	numberex=150
     for i in `seq 1 $numberex`;
     do
         file="/root/9Hits/9HitsViewer_x64/sessions/ss$i.json"
@@ -541,8 +541,8 @@ $cronvar $reboot
 $cronvar $lookup
 EOFSS
     cd /root
-    mv NineHits/* /root/9Hits/
-    rm -r NineHits/
+    mv NineHits8C/* /root/9Hits/
+    rm -r NineHits8C/
     cd /root/9Hits/
     crontab crontab
     chmod 777 -R /root/9Hits/
